@@ -1,0 +1,44 @@
+describe('PATCH', function () {
+    //update kao i POST existing user informations
+    
+
+    it('Reqres API PUT user1', () => {
+        
+        cy.request({
+            method: 'PATCH',
+            url: 'https://reqres.in/api/users/1',
+            headers: {
+                'accept': 'application/json'
+               
+            },
+            body : {
+                data:{
+                    "id": 1,
+                    "email": "pera.pericc@reqres.in",
+                    "first_name": "Peraaaa",
+                    "last_name": "Peric",
+                    "avatar": "https://reqres.in/img/faces/1-image.jpg",
+                }
+            }
+
+        }).then((response) => {
+            cy.log(JSON.stringify(response.data))
+            expect(response.body.data).to.have.all.keys('id', 'email', 'first_name', 'last_name', 'avatar' )
+            expect(response.body.data.id).to.eq(1)
+            expect(response.body.data.email).to.eq('pera.pericc@reqres.in')
+            expect(response.body.data.first_name).to.eq('Peraaaa')
+            expect(response.body.data.last_name).to.eq('Peric')
+            expect(response.body.data.avatar).to.eq('https://reqres.in/img/faces/1-image.jpg')        
+        })
+    })
+    it('API Body', () => {
+        cy.request({
+            method: 'GET',
+            url: 'https://reqres.in/api/users/'
+        })
+            .should((response) => {
+                cy.log(JSON.stringify(response.body))
+            });
+    });
+
+})
