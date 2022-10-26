@@ -11,19 +11,19 @@ pipeline {
                 stage('APIDeleteResourceId') {
                     steps{
                         bat 'npm install'
-                         bat 'npx cypress run --config videoRecording=false --spec cypress/e2e/APIDeleteResourceId.cy.js'
+                         bat 'npx cypress run --config videoRecording=false --spec cypress/e2e/API/APIDeleteResourceId.cy.js'
                     }
                      
                 }
                 stage('APIDeleteUserId') {
                     steps{
-                        bat 'npx cypress run --config videoRecording=false -- spec cypress/e2e/APIDeleteUserId.cy.js'
+                        bat 'npx cypress run --config videoRecording=false -- spec cypress/e2e/API/APIDeleteUserId.cy.js'
                     }
                       
                 }
                 stage('APIGetResource') {
                     steps{
-                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/APIGetResource.cy.js'
+                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/API/APIGetResource.cy.js'
                     }
                       
                 }
@@ -35,19 +35,19 @@ pipeline {
                 
                 stage('APIGetResourceID') {
                     steps{
-                         bat 'npx cypress run   --config videoRecording=false --spec cypress/e2e/APIGetResourceID.cy.js'
+                         bat 'npx cypress run   --config videoRecording=false --spec cypress/e2e/API/APIGetResourceID.cy.js'
                     }
                      
                 }
                 stage('APIGetUsers') {
                     steps{
-                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/APIGetUsers.cy.js'
+                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/API/APIGetUsers.cy.js'
                     }
                       
                 }
                 stage('APIGetUsersId') {
                     steps{
-                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/APIGetUsersId.cy.js'
+                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/API/APIGetUsersId.cy.js'
                     }
                       
                 }
@@ -58,19 +58,19 @@ pipeline {
                 
                 stage('APIPatchResourceId') {
                     steps{
-                         bat 'npx cypress run   --config videoRecording=false --spec cypress/e2e/APIPatchResourceId.cy.js'
+                         bat 'npx cypress run   --config videoRecording=false --spec cypress/e2e/API/APIPatchResourceId.cy.js'
                     }
                      
                 }
                 stage('APIPatchUserId') {
                     steps{
-                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/APIPatchUserId.cy.js'
+                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/API/APIPatchUserId.cy.js'
                     }
                       
                 }
                 stage('APIPostLogIn') {
                     steps{
-                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/APIPostLogIn.cy.js'
+                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/API/APIPostLogIn.cy.js'
                     }
                       
                 }
@@ -81,25 +81,25 @@ pipeline {
                 
                 stage('APIPostLogOut') {
                     steps{
-                         bat 'npx cypress run   --config videoRecording=false --spec cypress/e2e/APIPostLogOut.cy.js'
+                         bat 'npx cypress run   --config videoRecording=false --spec cypress/e2e/API/APIPostLogOut.cy.js'
                     }
                      
                 }
                 stage('APIPostRegisterUser') {
                     steps{
-                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/APIPostRegisterUser.cy.js'
+                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/API/APIPostRegisterUser.cy.js'
                     }
                       
                 }
                 stage('APIPostUserId') {
                     steps{
-                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/APIPostUserId.cy.js'
+                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/API/APIPostUserId.cy.js'
                     }
                       
                 }
                 stage('APIPutResourceId') {
                     steps{
-                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/APIPutResourceId.cy.js'
+                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/API/APIPutResourceId.cy.js'
                     }
                       
                 }
@@ -110,7 +110,7 @@ pipeline {
                 
                 stage('APIDeleteResourceId') {
                     steps{
-                         bat 'npx cypress run --config videoRecording=false --spec cypress/e2e/*.cy.js'
+                         bat 'npx cypress run --config videoRecording=false --spec cypress/e2e/API/*.cy.js'
                     }
                      
                 }
