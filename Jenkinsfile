@@ -23,7 +23,7 @@ pipeline {
                 }
                 stage('APIGetResource') {
                     steps{
-                        bat 'npx cypress run  --config videoRecording=false -- spec cypress/e2e/API/APIGetResource.cy.js'
+                        bat 'npx cypress run --config videoRecording=false -- spec cypress/e2e/API/APIGetResource.cy.js'
                     }
                       
                 }
