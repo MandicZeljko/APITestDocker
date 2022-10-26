@@ -22,7 +22,7 @@ describe('POST', function () {
             cy.log(JSON.stringify(response.data))
             expect(response.body.data).to.have.all.keys('id', 'email', 'first_name', 'last_name', 'avatar' )
             expect(response.body.data.id).to.eq(1)
-            expect(response.body.data.email).to.eq('pera.peric@reqres.in')
+            expect(response.body.data.email).to.eq('pera.pericc@reqres.in')
             expect(response.body.data.first_name).to.eq('Peraaaa')
             expect(response.body.data.last_name).to.eq('Peric')
             expect(response.body.data.avatar).to.eq('https://reqres.in/img/faces/1-image.jpg')

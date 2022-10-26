@@ -10,6 +10,7 @@ pipeline {
                 
                 stage('APIDeleteResourceId') {
                     steps{
+                        bat 'npm install'
                          bat 'npx cypress run --config videoRecording=false --spec cypress/e2e/APIDeleteResourceId.cy.js'
                     }
                      

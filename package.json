@@ -4,11 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run cypress/e2e/API/*.cy.js",
+    "test-html": "mocha --report mochawesome",
+    "test-junit": "mocha --report mocha-junit-report"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^10.10.0"
+  },
+  "devDependencies": {
+    "mochawesome-report-generator": "^6.2.0"
   }
 }
