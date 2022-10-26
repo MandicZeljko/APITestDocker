@@ -1,5 +1,3 @@
-const { iterateAll } = require("helper-js")
-
 describe('POST resgister a user', () => {
     it('Resgister new user', () => {
         cy.request({
