@@ -11,7 +11,7 @@ pipeline {
                 stage('APIDeleteResourceId') {
                     steps{
                         bat 'npm install'
-                         bat 'npx cypress run --spec cypress/e2e/API/APIDeleteResourceId.cy.js'
+                         bat 'npx cypress run --reporter cypress-junit-reporter --spec cypress/e2e/API/APIDeleteResourceId.cy.js'
                     }
                      
                 }
