@@ -11,19 +11,19 @@ pipeline {
                 stage('APIDeleteResourceId') {
                     steps{
                         bat 'npm install'
-                         bat 'npx cypress run --spec cypress/e2e/API/APIDeleteResourceId.cy.js'
+                         bat 'npx cypress run --video=false --spec cypress/e2e/API/APIDeleteResourceId.cy.js'
                     }
                      
                 }
                 stage('APIDeleteUserId') {
                     steps{
-                        bat 'npx cypress run -- spec cypress/e2e/API/APIDeleteUserId.cy.js'
+                        bat 'npx cypress run --video=false -- spec cypress/e2e/API/APIDeleteUserId.cy.js'
                     }
                       
                 }
                 stage('APIGetResource') {
                     steps{
-                        bat 'npx cypress run -- spec cypress/e2e/API/APIGetResource.cy.js'
+                        bat 'npx cypress run --video=false -- spec cypress/e2e/API/APIGetResource.cy.js'
                     }
                       
                 }
