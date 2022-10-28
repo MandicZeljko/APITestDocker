@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.526" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-10-28T16:51:25" tests="0" file="cypress\e2e\API\APIDeleteResourceId.cy.js" failures="0" time="0">
+  </testsuite>
+  <testsuite name="DELETE resource Id" timestamp="2022-10-28T16:51:25" tests="2" failures="0" time="0.526">
+    <testcase name="DELETE resource Id All resources" time="0.227" classname="All resources" failure="false" error="false" success="true">
+    </testcase>
+    <testcase name="DELETE resource Id Delete resource Id 12" time="0.299" classname="Delete resource Id 12" failure="false" error="false" success="true">
+    </testcase>
+  </testsuite>
+</testsuites>
