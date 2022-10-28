@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-10-26T15:53:38.038Z",
+    "end": "2022-10-26T15:53:38.379Z",
+    "duration": 341,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2208b3b4-640f-4f61-a8e2-8d4afa7f1f17",
+      "title": "",
+      "fullFile": "cypress\\e2e\\API\\APIPutResourceId.cy.js",
+      "file": "cypress\\e2e\\API\\APIPutResourceId.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0a93c1c5-7e8e-4e0c-856c-94f233bf578c",
+          "title": "PUT resource Id ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Reqres API PUT resource 1",
+              "fullTitle": "PUT resource Id  Reqres API PUT resource 1",
+              "timedOut": null,
+              "duration": 177,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'PUT',\n  url: 'https://reqres.in/api/{resource}/1',\n  headers: {\n    'accept': 'application/json'\n  },\n  body: {\n    data: {\n      \"id\": 1,\n      \"name\": \"cerulean\",\n      \"year\": 2009,\n      \"color\": \"#98B2D1\",\n      \"pantone_value\": \"15-4020\"\n    }\n  }\n}).then(response => {\n  cy.log(JSON.stringify(response.data));\n  expect(response.body.data).to.have.all.keys('id', 'name', 'year', 'color', 'pantone_value');\n  expect(response.body.data.id).to.eq(1);\n  expect(response.body.data.name).to.eq('cerulean');\n  expect(response.body.data.year).to.eq(2009);\n  expect(response.body.data.color).to.eq('#98B2D1');\n  expect(response.body.data.pantone_value).to.eq('15-4020');\n});",
+              "err": {},
+              "uuid": "b30263e5-4e06-45b9-aba5-519e8a6fae47",
+              "parentUUID": "0a93c1c5-7e8e-4e0c-856c-94f233bf578c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Reqres API PUT resource 2",
+              "fullTitle": "PUT resource Id  Reqres API PUT resource 2",
+              "timedOut": null,
+              "duration": 145,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'PUT',\n  url: 'https://reqres.in/api/{resource}/2',\n  headers: {\n    'accept': 'application/json'\n  },\n  body: {\n    data: {\n      \"id\": 2,\n      \"name\": \"rose\",\n      \"year\": 2099,\n      \"color\": \"#C74375\",\n      \"pantone_value\": \"17-2031\"\n    }\n  }\n}).then(response => {\n  cy.log(JSON.stringify(response.data));\n  expect(response.body.data).to.have.all.keys('id', 'name', 'year', 'color', 'pantone_value');\n  expect(response.body.data.id).to.eq(2);\n  expect(response.body.data.name).to.eq('rose');\n  expect(response.body.data.year).to.eq(2099);\n  expect(response.body.data.color).to.eq('#C74375');\n  expect(response.body.data.pantone_value).to.eq('17-2031');\n});",
+              "err": {},
+              "uuid": "33804077-ec32-4aec-9182-d98f9843f5b4",
+              "parentUUID": "0a93c1c5-7e8e-4e0c-856c-94f233bf578c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b30263e5-4e06-45b9-aba5-519e8a6fae47",
+            "33804077-ec32-4aec-9182-d98f9843f5b4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 322,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

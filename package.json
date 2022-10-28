@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run cypress/e2e/API/*.cy.js",
+    "test": "npm run",
     "test-html": "mocha --report mochawesome",
     "test-junit": "mocha --report mocha-junit-report"
   },
@@ -14,10 +14,10 @@
     "cypress": "^10.10.0",
     "D": "^1.0.0",
     "mocha": "^10.1.0",
-    "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.2.1"
   },
   "devDependencies": {
+    "mochawesome": "^7.1.3",
     "mochawesome-report-generator": "^6.2.0"
   }
 }
