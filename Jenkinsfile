@@ -123,7 +123,7 @@ pipeline {
     }
      post {
         always {
-            junit 'build/reports/**/*.xml'
+            junit 'cypress/reports/*.xml'
         }
     }
     
